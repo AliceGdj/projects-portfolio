@@ -6,15 +6,15 @@ import styles from './layout.module.css';
 const MENU_LIST = [
     {
         text: "Projects",
-        href: "/"
+        href: "/projects"
     },
     {
-        text: "Languages",
-        href: "/projects/claimer"
+        text: "Skills",
+        href: "/skills"
     },
     {
         text: "Contact",
-        href: "/projects/claimer"
+        href: "/contact"
     }
 ]
 

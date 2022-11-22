@@ -8,7 +8,7 @@ import {Navbar} from "./Navbar";
 const name = 'Alice Grandjean';
 export const siteTitle = 'Portfolio Alice';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, projects }) {
   return (
     <>
       <Head>
@@ -43,7 +43,13 @@ export default function Layout({ children, home }) {
           )}
         </div>
         <main>{children}</main>
-        {!home && (
+        {projects && (
+          <div className={styles.backToHome}>
+              ← 
+              <Link href="/projects">Back to projects</Link>
+          </div>
+        )}
+        {!home && !projects && (
           <div className={styles.backToHome}>
               ← 
               <Link href="/">Back to home</Link>

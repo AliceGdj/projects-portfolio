@@ -28,7 +28,7 @@ export async function getStaticProps({ params }) {
 export default function Project({ projectData }) {
     const logoPath = "/images/"+projectData.id+".jpeg";
     return (
-        <Layout>
+        <Layout projects>
             <Head>
                 <title>{projectData.title}</title>
             </Head>
