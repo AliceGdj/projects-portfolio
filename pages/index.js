@@ -5,7 +5,9 @@ import { getSortedProjectsData } from '../lib/projects';
 import Link from 'next/link';
 import { Date, DateInterval } from '../components/date';
 
-export async function getStaticProps() { // depends on external data >> getStaticProps to fetch required data to render the index page
+export async function getStaticProps() { 
+  // depends on external data >> fetch required data to render the index page
+  // not working with the _app.js file
   const allProjectsData = getSortedProjectsData();
   return {
     props: {
