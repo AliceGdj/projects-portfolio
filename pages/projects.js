@@ -28,7 +28,7 @@ export default function Projects ({ allProjectsData: allProjectsData }) {
                 <ul className={utilStyles.list}>
                 {allProjectsData.map(({ id, dateFrom, dateTo, title }) => (
                     <li className={utilStyles.listItem} key={id}>
-                    <Link href={`/projects/${id}`}>
+                    <Link style={{textDecoration: 'none'}} href={`/projects/${id}`}>
                         {title}
                     </Link>
                     <br />

@@ -3,7 +3,10 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import {Navbar} from "./Navbar";
+import { Navbar } from "./Navbar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 const name = 'Alice Grandjean';
 export const siteTitle = 'Portfolio Alice';
@@ -45,14 +48,14 @@ export default function Layout({ children, home, projects }) {
         <main>{children}</main>
         {projects && (
           <div className={styles.backToHome}>
-              ← 
-              <Link href="/projects">Back to projects</Link>
+              <FontAwesomeIcon icon={faArrowLeft} />
+              <Link style={{textDecoration: 'none'}} href="/projects"> Back to projects</Link>
           </div>
         )}
         {!home && !projects && (
           <div className={styles.backToHome}>
-              ← 
-              <Link href="/">Back to home</Link>
+              <FontAwesomeIcon icon={faArrowLeft} />
+              <Link style={{textDecoration: 'none'}} href="/"> Back to home</Link>
           </div>
         )}
       </div>

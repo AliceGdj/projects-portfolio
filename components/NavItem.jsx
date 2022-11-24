@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 
 const NavItem = ({ href, text, active }) => {
     return (
-        <Link href={href}>
+        <Link style={{textDecoration: 'none'}} href={href}>
             <a className={`${styles.nav_link} ${active ? `${styles.active}` : ""}`}>
                 {text}
             </a>

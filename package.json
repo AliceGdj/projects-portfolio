@@ -6,6 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/helper-module-imports": "^7.18.6",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "babel-plugin-macros": "^3.1.0",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.2",
     "next": "latest",

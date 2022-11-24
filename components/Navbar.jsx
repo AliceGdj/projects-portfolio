@@ -25,8 +25,8 @@ export const Navbar = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Link href={"/"}> 
-                    <a onClick={() => setActiveIdx(0)} > 
+                <Link style={{textDecoration: 'none'}} href={"/"}> 
+                    <a onClick={() => setActiveIdx(0)}> 
                         <h1 className="logo">Portfolio</h1>
                     </a>
                 </Link>
