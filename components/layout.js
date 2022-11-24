@@ -48,13 +48,13 @@ export default function Layout({ children, home, projects }) {
         <main>{children}</main>
         {projects && (
           <div className={styles.backToHome}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faArrowLeft} size="lg"/>
               <Link style={{textDecoration: 'none'}} href="/projects"> Back to projects</Link>
           </div>
         )}
         {!home && !projects && (
           <div className={styles.backToHome}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faArrowLeft} size="lg"/>
               <Link style={{textDecoration: 'none'}} href="/"> Back to home</Link>
           </div>
         )}
