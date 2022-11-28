@@ -15,6 +15,10 @@ const MENU_LIST = [
     {
         text: "Contact",
         href: "/contact"
+    }, 
+    {
+        text: "Download Resume",
+        href: "https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf"
     }
 ]
 

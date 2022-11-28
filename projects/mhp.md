@@ -1,5 +1,5 @@
 ---
-title: 'Software Developer, MHP'
+title: 'Software Consultant, MHP'
 dateFrom: '2022-11-01'
 dateTo: '2023-03-31'
 ---

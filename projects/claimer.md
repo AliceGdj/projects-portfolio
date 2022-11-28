@@ -1,5 +1,5 @@
 ---
-title: 'Software Developer, Claimer'
+title: 'Software Consultant, Claimer'
 dateFrom: '2022-03-02'
 dateTo: '2022-08-31'
 ---
