@@ -15,10 +15,6 @@ const MENU_LIST = [
     {
         text: "Contact",
         href: "/contact"
-    }, 
-    {
-        text: "Download Resume",
-        href: "https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf"
     }
 ]
 
@@ -54,6 +50,7 @@ export const Navbar = () => {
                             </div>    
                         )  
                     })}
+                    <a href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf" className={styles.download_resume}>Download Resume</a>
                 </div>
             </nav>
         </header>

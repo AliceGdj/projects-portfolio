@@ -49,7 +49,7 @@
     top: 106px;
     width: 288px;
     row-gap: 24px;
-    padding: 24px 16px;
+    padding: 16px;
     right: -322px;
     min-height: calc(100vh - 60px);
     background-color: #f1f1f1;
@@ -104,4 +104,17 @@
         width: 100%;
         content: attr('data-text');
     }
+}
+
+.download_resume {
+    border:none;
+    border-radius: 25px;
+    padding:12px 24px 12px 24px;
+    cursor:pointer;
+    background-color: #b2b2ff;
+    text-decoration: none;
+}
+
+.download_resume:hover {
+    font-weight: bold;
 }
