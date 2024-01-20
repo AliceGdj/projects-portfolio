@@ -3,11 +3,12 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import React from 'react';
 
 const name = 'Alice Grandjean';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function RootLayout({ children, home }) {
+export default function RootLayout({ children, home }: any) { // TODO remove the any
   return (
     <div className={styles.container}>
       <Head>
