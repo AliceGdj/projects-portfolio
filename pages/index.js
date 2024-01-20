@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import RootLayout, { siteTitle } from '../components/rootLayout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedProjectsData } from '../lib/projects';
 import Link from 'next/link';
@@ -16,7 +16,7 @@ export async function getStaticProps() { // depends on external data >> getStati
 
 export default function Home ({ allProjectsData: allProjectsData }) {
   return (
-    <Layout home>
+    <RootLayout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -44,7 +44,7 @@ export default function Home ({ allProjectsData: allProjectsData }) {
           ))}
         </ul>
       </section>
-    </Layout>
+    </RootLayout>
   );
 }
 

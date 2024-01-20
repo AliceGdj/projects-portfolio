@@ -1,4 +1,4 @@
-import Layout from '../../components/layout';
+import RootLayout from '../../components/rootLayout';
 import { getAllProjectIds, getProjectData } from '../../lib/projects';
 import Head from 'next/head';
 import { Date } from '../../components/date';
@@ -28,7 +28,7 @@ export async function getStaticProps({ params }) {
 export default function Project({ projectData }) {
     const logoPath = "/images/"+projectData.id+".jpeg";
     return (
-        <Layout>
+        <RootLayout>
             <Head>
                 <title>{projectData.title}</title>
             </Head>
@@ -51,6 +51,6 @@ export default function Project({ projectData }) {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
             </article>
-        </Layout>
+        </RootLayout>
     )
 }
