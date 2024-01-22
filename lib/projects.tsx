@@ -4,12 +4,19 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
+interface ProjectData {
+  id: string;
+  title: string;
+  dateFrom: string;
+  dateTo: string;
+}
+
 const projectsDirectory = path.join(process.cwd(), 'projects');
 
 export function getSortedProjectsData() {
   // Get file names under /projects
   const fileNames = fs.readdirSync(projectsDirectory);
-  const allProjectsData:any = fileNames.map((fileName) => { // TODO change any
+  const allProjectsData: ProjectData[] = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
     // Read markdown file as string
@@ -22,7 +29,7 @@ export function getSortedProjectsData() {
         id,
         ...matterResult.data,
       };
-  });
+  }) as ProjectData[];
 
   // Sort projects by date
   return allProjectsData.sort(({ dateFrom: a }, { dateFrom: b }) => {

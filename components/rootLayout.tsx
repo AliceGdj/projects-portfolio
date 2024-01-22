@@ -8,7 +8,7 @@ import React from 'react';
 const name = 'Alice Grandjean';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function RootLayout({ children, home }: any) { // TODO remove the any
+export default function RootLayout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
