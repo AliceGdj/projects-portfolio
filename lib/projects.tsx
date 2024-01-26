@@ -3,13 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-
-interface ProjectData {
-  id: string;
-  title: string;
-  dateFrom: string;
-  dateTo: string;
-}
+import { ProjectData } from '../types/projectDataTypes';
 
 const projectsDirectory = path.join(process.cwd(), 'projects');
 

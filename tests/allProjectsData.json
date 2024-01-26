@@ -1,0 +1,26 @@
+[
+    {
+      "id": "audi",
+      "title": "Software Developer, Audi",
+      "dateFrom": "2021-01-01",
+      "dateTo": "2021-10-31"
+    },
+    {
+      "id": "claimer",
+      "title": "Software Developer, Claimer",
+      "dateFrom": "2022-03-02",
+      "dateTo": "2022-08-31"
+    },
+    {
+      "id": "superVista",
+      "title": "Software Developer, Super Vista",
+      "dateFrom": "2019-04-01",
+      "dateTo": "2020-01-31"
+    },
+    {
+      "id": "volkswagen",
+      "title": "Software Developer, Volkswagen",
+      "dateFrom": "2020-02-01",
+      "dateTo": "2020-12-31"
+    }
+]

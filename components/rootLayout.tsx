@@ -8,8 +8,8 @@ import React from 'react';
 const name = 'Alice Grandjean';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function RootLayout({ children, home }) {
-  return (
+export default function RootLayout({ children, home } : { children: React.ReactNode, home?: React.ReactNode }) {
+    return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
