@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedProjectsData } from '../lib/projects';
 import Link from 'next/link';
 import { Date, DateInterval } from '../components/date';
-import { ProjectData } from '../types/projectDataTypes';
+import { ProjectDataInfo } from '../types/projectDataTypes';
 
 export async function getStaticProps() { // depends on external data >> getStaticProps to fetch required data to render the index page
   const allProjectsData = getSortedProjectsData();
@@ -16,7 +16,7 @@ export async function getStaticProps() { // depends on external data >> getStati
   };
 }
 
-export default function Home ({ allProjectsData }: { allProjectsData: ProjectData[]}) {
+export default function Home ({ allProjectsData }: { allProjectsData: ProjectDataInfo[]}) {
   return (
     <RootLayout home>
       <Head>

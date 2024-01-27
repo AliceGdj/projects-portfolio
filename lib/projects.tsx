@@ -3,14 +3,14 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import { ProjectData } from '../types/projectDataTypes';
+import { ProjectDataInfo } from '../types/projectDataTypes';
 
 const projectsDirectory = path.join(process.cwd(), 'projects');
 
 export function getSortedProjectsData() {
   // Get file names under /projects
   const fileNames = fs.readdirSync(projectsDirectory);
-  const allProjectsData: ProjectData[] = fileNames.map((fileName) => {
+  const allProjectsData: ProjectDataInfo[] = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
     // Read markdown file as string
@@ -23,7 +23,7 @@ export function getSortedProjectsData() {
         id,
         ...matterResult.data,
       };
-  }) as ProjectData[];
+  }) as ProjectDataInfo[];
 
   // Sort projects by date
   return allProjectsData.sort(({ dateFrom: a }, { dateFrom: b }) => {
