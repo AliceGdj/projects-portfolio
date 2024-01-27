@@ -1,9 +1,9 @@
 import { parseISO, format, intervalToDuration } from 'date-fns';
 import React from 'react';
 
-export function Date({ dateString }: { dateString: string}) {
+export function FormattedDate({ dateString }: { dateString: string}) {
   const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+  return <time dateTime={dateString}>{format(date, 'LLLL yyyy')}</time>;
 }
 
 export function DateInterval({ dateStringFrom, dateStringTo }) {

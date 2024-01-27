@@ -2,7 +2,7 @@ import React from 'react';
 import RootLayout from '../../components/rootLayout';
 import { getAllProjectIds, getProjectData } from '../../lib/projects';
 import Head from 'next/head';
-import { Date } from '../../components/date';
+import { FormattedDate } from '../../components/date';
 import Image from 'next/image';
 import styles from '../../components/layout.module.css';
 import utilStyles from '../../styles/utils.module.css';
@@ -47,9 +47,9 @@ export default function Project({ projectData } : {projectData: ProjectDataConte
             <article>
                 <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
                 <div className={utilStyles.lightText}>
-                    <Date dateString={projectData.dateFrom} />
+                    <FormattedDate dateString={projectData.dateFrom} />
                     &nbsp;-&nbsp;
-                    <Date dateString={projectData.dateTo} />
+                    <FormattedDate dateString={projectData.dateTo} />
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
             </article>
