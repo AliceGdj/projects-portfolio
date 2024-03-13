@@ -1,12 +1,11 @@
 import React from 'react';
-import RootLayout from '../../components/rootLayout';
-import { getAllProjectIds, getProjectData } from '../../lib/projects';
 import Head from 'next/head';
-import { FormattedDate } from '../../components/date';
+import { FormattedDate } from './date';
 import Image from 'next/image';
-import styles from '../../components/layout.module.css';
+import styles from '/pages/index.module.css';
 import utilStyles from '../../styles/utils.module.css';
-import { ProjectDataContent } from '../../types/projectDataTypes';
+import { ProjectDataContent } from '../types/projectDataTypes';
+import { getAllProjectIds, getProjectData } from '../utils/projectsUtils';
 
 export async function getStaticPaths() {
     // an array of possible values for id
@@ -30,7 +29,7 @@ export async function getStaticProps({ params }) {
 export default function Project({ projectData } : {projectData: ProjectDataContent }) {
     const logoPath = "/images/"+projectData.id+".jpeg";
     return (
-        <RootLayout>
+        <div>
             <Head>
                 <title>{projectData.title}</title>
             </Head>
@@ -53,6 +52,6 @@ export default function Project({ projectData } : {projectData: ProjectDataConte
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
             </article>
-        </RootLayout>
+        </div>
     )
 }

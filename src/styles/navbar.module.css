@@ -1,29 +1,8 @@
-.container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-}
-
-.headerImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.backToHome {
-    margin: 3rem 0 0;
-}
-
-.header {
-    position: sticky;
-    top:0;
-    z-index: 10;
-}
-
 .nav {
     display: flex; 
     padding: 16px;
     justify-content: space-between;
+    align-items: stretch;
     align-items: center;
     background-color: #f1f1f1;
 }
@@ -43,6 +22,7 @@
     flex-direction: row;
     align-items: center;
     column-gap: 24px;
+    flex-grow: 1;
 }
 
 .nav_link::before {
@@ -60,4 +40,8 @@
 .nav_link.active::before {
     width: 100%;
     content: attr('data-text');
+}
+
+.nav_menulist div:last-child {
+    margin-left: auto;
 }

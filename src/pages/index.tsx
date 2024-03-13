@@ -1,13 +1,16 @@
 import React from 'react';
-import Head from 'next/head';
-import RootLayout, { siteTitle } from '../components/rootLayout';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedProjectsData } from '../lib/projects';
 import Link from 'next/link';
 import { FormattedDate, DateInterval } from '../components/date';
 import { ProjectDataInfo } from '../types/projectDataTypes';
+import { getSortedProjectsData } from '../utils/projectsUtils';
+import Image from 'next/image';
+import { Navbar } from '../components/navbar';
+import styles from './index.module.css';
+import utilStyles from '../styles/utils.module.css';
 
-export async function getStaticProps() { // depends on external data >> getStaticProps to fetch required data to render the index page
+const name = 'Alice Grandjean';
+
+export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
   return {
     props: {
@@ -18,24 +21,33 @@ export async function getStaticProps() { // depends on external data >> getStati
 
 export default function Home ({ allProjectsData }: { allProjectsData: ProjectDataInfo[]}) {
   return (
-    <RootLayout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
+    <div>
+        <Navbar />
+      <header className={styles.headerImage}>
+          <Image
+              priority
+              src="/images/profile.jpeg"
+              className={utilStyles.borderCircle}
+              height={450}
+              width={450}
+              alt=""
+          />
+          <h1 className={utilStyles.heading2Xl}>{name}</h1>
+      </header>
+      <section>
         <p>I am a frontend developer with {new Date().getFullYear()-2019} years experience building and maintaining responsive websites. I worked for clients in the car industry (Volkswagen, Audi), in the finance industry (Claimer) and in the start-up world. My stack is primarily Javascript & React but I have some experience with Python, AWS, Docker, AEM...</p>
         <p>Additionally, I am very flexible and adaptable. I speak fluent English, German and French and I am a member of the Women in Tech movement in Berlin.</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects</h2>
-        <ul className={utilStyles.list}>
+      <section>
+        <h2>Projects</h2>
+        <ul>
           {allProjectsData.map(({ id, dateFrom, dateTo, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/projects/${id}`}>
+            <li key={id}>
+              <Link href={`/projectsData/${id}`}>
                 {title}
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small>
                 <FormattedDate dateString={dateFrom} />
                 &nbsp;-&nbsp;
                 <FormattedDate dateString={dateTo} />
@@ -46,7 +58,6 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
           ))}
         </ul>
       </section>
-    </RootLayout>
+    </div>
   );
 }
-

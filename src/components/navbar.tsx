@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
-import styles from './layout.module.css';
+import styles from '../styles/navbar.module.css';
 import NavItem from './navItem';
 
 const MENU_LIST = [
+    {
+        text: "Portfolio",
+        href: "/"
+    },
     {
         text: "About",
         href: "/"
@@ -24,9 +27,6 @@ export const Navbar = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Link style={{textDecoration: 'none'}} href={"/"} onClick={() => setActiveIdx(0)}> 
-                    <h1 className="logo">Portfolio</h1>
-                </Link>
                 <div className={styles.nav_menulist}>
                     {MENU_LIST.map((el, idx) => {
                         return (
@@ -40,8 +40,9 @@ export const Navbar = () => {
                             </div>    
                         )  
                     })}
-                    {/* TODO add in the projects section */}
-                    {/* <a href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf" className={styles.download_resume}>Download Resume</a> */}
+                    <div className={styles.download_resume}>
+                        <a href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf">Download Resume</a>
+                    </div>
                 </div>
             </nav>
         </header>

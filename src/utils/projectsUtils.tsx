@@ -5,20 +5,18 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import { ProjectDataInfo } from '../types/projectDataTypes';
 
-const projectsDirectory = path.join(process.cwd(), 'projects');
+const projectsDirectory = path.join(process.cwd(), 'projectsData');
 
 export function getSortedProjectsData() {
   // Get file names under /projects
   const fileNames = fs.readdirSync(projectsDirectory);
   const allProjectsData: ProjectDataInfo[] = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
-    // Read markdown file as string
     const fullPath = path.join(projectsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     // Use gray-matter to parse the project metadata section
     const matterResult = matter(fileContents);
-    // Combine the data with the id
+
     return {
         id,
         ...matterResult.data,
@@ -39,20 +37,6 @@ export function getSortedProjectsData() {
 
 export function getAllProjectIds() {
   const fileNames = fs.readdirSync(projectsDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return fileNames.map((fileName) => {
     return {
       params: {
@@ -75,7 +59,6 @@ export async function getProjectData(id) {
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
-  // Combine the data with the id
   return {
     id,
     contentHtml,

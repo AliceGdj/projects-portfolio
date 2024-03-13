@@ -1,6 +1,6 @@
 import React from "react";
 import Link from 'next/link';
-import styles from './layout.module.css';
+import styles from '../styles/navbar.module.css';
 
 interface Props {
     href: string;
