@@ -34,7 +34,7 @@ export default function Project({ projectData } : {projectData: ProjectDataConte
             <Head>
                 <title>{projectData.title}</title>
             </Head>
-            <header className={styles.header}>
+            <header className={styles.headerImage}>
                 <Image
                     priority
                     src={logoPath}

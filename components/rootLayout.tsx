@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import React from 'react';
+import { Navbar } from './navbar';
 
 const name = 'Alice Grandjean';
 export const siteTitle = 'Next.js Sample Website';
@@ -26,7 +27,8 @@ export default function RootLayout({ children, home } : { children: React.ReactN
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <Navbar />
+      <header className={styles.headerImage}>
         {home && (
           <>
             <Image
