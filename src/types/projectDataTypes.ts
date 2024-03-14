@@ -1,10 +1,7 @@
-export interface ProjectDataInfo {
+export interface ProjectDataContent {
     id: string;
     title: string;
     dateFrom: string;
     dateTo: string;
-}
-
-export interface ProjectDataContent extends ProjectDataInfo {
     contentHtml: string;
 }
