@@ -1,0 +1,15 @@
+.collapsible_container{
+    background-color: grey;
+    display: flex;
+}
+
+.collapsible_titles{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.collapsed_container{
+    background-color: lightgray;
+}
+
