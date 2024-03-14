@@ -5,7 +5,7 @@ dateTo: '2023-07-31'
 ---
 **Location: Berlin, Germany**
 
-**Company: MHP**
+**Contract: Freelance**
 
 - Developed the mobile and desktop app from scratch which displays the inventory of all the trips of a car 
 - Implemented features e.g. map, search, filter, categorisation, i18n, MFA with Azure Active Directory...

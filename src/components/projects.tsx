@@ -10,7 +10,6 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
           {allProjectsData.map(({ id, title, dateFrom, dateTo, contentHtml }) => (
             <div key={id}>
                 <h2>{title}</h2>
-                <p>{id}</p>
                 <p>
                     <FormattedDate dateString={dateFrom} />
                     &nbsp;-&nbsp;

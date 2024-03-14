@@ -5,7 +5,7 @@ dateTo: '2020-12-31'
 ---
 **Location: Berlin, Germany**
 
-**Company: Sinnerschrader Accenture**
+**Contract: Full-time**
 
 - Developed admin dashboard to display and manipulate large sets of images & automated processes for image management using AWS Lambdas, Cloudfront, API Gateway, S3 buckets
 - Directed Accessibility survey to reach AA compliancy & gave Accessibility talk

@@ -5,7 +5,7 @@ dateTo: '2020-01-31'
 ---
 **Location: Berlin, Germany**
 
-**Company: Super Vista**
+**Contract: Full-time**
 
 - Built SAP for order management as part of large e-commerce application 
 - Created new features, functionalities and capabilities to add new product verticals

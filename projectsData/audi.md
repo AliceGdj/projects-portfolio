@@ -5,7 +5,7 @@ dateTo: '2021-10-31'
 ---
 **Location: Berlin, Germany**
 
-**Company: Sinnerschrader Accenture**
+**Contract: Full-time**
 
 - Defined processes with Adobe Experience Manager CMS 
 - Fixed bugs in large codebase

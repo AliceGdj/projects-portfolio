@@ -5,7 +5,7 @@ dateTo: '2022-08-31'
 ---
 **Location: London, UK**
 
-**Company: Freelance**
+**Contract: Freelance**
 
 - Created workflows to enable customers to import financial data from various 3rd party APIs using React Hooks 
 - Implemented navigation bar with search, sort and filters feature, and carried out usability testing
