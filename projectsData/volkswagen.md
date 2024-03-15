@@ -2,10 +2,8 @@
 title: 'Software Developer, Volkswagen'
 dateFrom: '2020-02-01'
 dateTo: '2020-12-31'
+location: 'Berlin, Germany'
 ---
-**Location: Berlin, Germany**
-
-**Contract: Full-time**
 
 - Developed admin dashboard to display and manipulate large sets of images & automated processes for image management using AWS Lambdas, Cloudfront, API Gateway, S3 buckets
 - Directed Accessibility survey to reach AA compliancy & gave Accessibility talk

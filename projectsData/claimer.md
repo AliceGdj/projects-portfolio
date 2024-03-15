@@ -2,10 +2,8 @@
 title: 'Software Developer, Claimer'
 dateFrom: '2022-03-02'
 dateTo: '2022-08-31'
+location: 'London, UK'
 ---
-**Location: London, UK**
-
-**Contract: Freelance**
 
 - Created workflows to enable customers to import financial data from various 3rd party APIs using React Hooks 
 - Implemented navigation bar with search, sort and filters feature, and carried out usability testing

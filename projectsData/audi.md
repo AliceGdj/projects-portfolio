@@ -2,10 +2,8 @@
 title: 'Software Developer, Audi'
 dateFrom: '2021-01-01'
 dateTo: '2021-10-31'
+location: 'Berlin, Germany'
 ---
-**Location: Berlin, Germany**
-
-**Contract: Full-time**
 
 - Defined processes with Adobe Experience Manager CMS 
 - Fixed bugs in large codebase

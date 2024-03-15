@@ -11,7 +11,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
     <div>
       <section>
         <h2>Projects</h2>
-          {allProjectsData.map(({ id, title, dateFrom, dateTo, contentHtml }) => (
+          {allProjectsData.map(({ id, title, dateFrom, dateTo, location, contentHtml }) => (
             <div key={id}>
                 <div className={styles.flex_container}>
                     <Image
@@ -28,6 +28,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                             &nbsp;-&nbsp;
                             <FormattedDate dateString={dateTo} />
                         </p>
+                        <p>{location}</p>
                     </div>
                     {/* <Image
                         priority

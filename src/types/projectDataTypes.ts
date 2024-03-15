@@ -3,5 +3,6 @@ export interface ProjectDataContent {
     title: string;
     dateFrom: string;
     dateTo: string;
+    location: string;
     contentHtml: string;
 }
