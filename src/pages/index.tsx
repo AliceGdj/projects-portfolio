@@ -5,6 +5,7 @@ import { Navbar } from '../components/navbar';
 import Profile from '../components/profile';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
+import Footer from '../components/footer';
 import styles from '../styles/utils.module.css';
 
 export function getStaticProps() {
@@ -25,6 +26,7 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
           <Projects allProjectsData={allProjectsData}/>
           <Contact />
         </div>
+        <Footer />
     </div>
   );
 }

@@ -11,8 +11,8 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
     <div>
       <section>
         <h2>Projects</h2>
-          {allProjectsData.map(({ id, title, dateFrom, dateTo, location, contentHtml }) => (
-            <div key={id}>
+          {allProjectsData.map(({ id, title, dateFrom, dateTo, location, contentHtml }, index) => (
+            <div key={index}>
                 <div className={styles.flex_container}>
                     <Image
                         priority
@@ -40,9 +40,13 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                     /> */}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                <br />
-                <hr />
-                <br />
+                {index < allProjectsData.length-1 && (
+                  <>
+                    <br />
+                    <hr />
+                    <br />
+                  </>
+                )}
             </div>
           ))}
       </section>

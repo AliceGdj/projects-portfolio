@@ -15,3 +15,14 @@
 .padding1px {
   padding-top: 1px;
 }
+
+.footer {
+  display: flex; 
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  align-items: stretch;
+  align-items: center;
+  background-color: grey;
+  bottom: 0;
+  font-size: 14px;
+}
