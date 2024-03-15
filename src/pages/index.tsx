@@ -5,6 +5,7 @@ import { Navbar } from '../components/navbar';
 import Profile from '../components/profile';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
+import styles from '../styles/utils.module.css';
 
 export function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
@@ -19,9 +20,11 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
   return (
     <div>
         <Navbar />
-        <Profile />
-        <Projects allProjectsData={allProjectsData}/>
-        <Contact />
+        <div className={styles.container}>
+          <Profile />
+          <Projects allProjectsData={allProjectsData}/>
+          <Contact />
+        </div>
     </div>
   );
 }

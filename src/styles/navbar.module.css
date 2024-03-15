@@ -1,6 +1,6 @@
 .nav {
     display: flex; 
-    padding: 16px;
+    padding: 1rem 5rem;
     justify-content: space-between;
     align-items: stretch;
     align-items: center;

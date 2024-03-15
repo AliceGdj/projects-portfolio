@@ -13,7 +13,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
         <h2>Projects</h2>
           {allProjectsData.map(({ id, title, dateFrom, dateTo, contentHtml }) => (
             <div key={id}>
-                <div className={styles.collapsible_container}>
+                <div className={styles.flex_container}>
                     <Image
                         priority
                         src={"/images/"+id+".jpeg"}
@@ -21,7 +21,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                         width={108}
                         alt=""
                     />
-                    <div className={styles.collapsible_head}>
+                    <div className={styles.flex_column_container}>
                         <h3>{title}</h3>
                         <p>
                             <FormattedDate dateString={dateFrom} />
@@ -39,6 +39,9 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                     /> */}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                <br />
+                <hr />
+                <br />
             </div>
           ))}
       </section>
