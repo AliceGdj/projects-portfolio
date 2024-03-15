@@ -48,3 +48,16 @@
 .nav_menulist div:last-child {
     margin-left: auto;
 }
+
+.nav_menulist div:last-child {
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+
+.nav_menulist div:last-child:hover {
+    background-color: lightgray;
+}
