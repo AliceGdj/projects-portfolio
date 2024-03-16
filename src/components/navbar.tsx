@@ -1,24 +1,34 @@
 import React, { useState } from 'react';
 import styles from '../styles/navbar.module.css';
 import NavItem from './navItem';
+import { getComponentTypeModule } from 'next/dist/server/lib/app-dir-module';
 
 const MENU_LIST = [
     {
-        text: "Profile",
-        href: "/"
+        text: "Profile"
     },
     {
-        text: "Projects",
-        href: "/"
+        text: "Projects"
     },
     {
-        text: "Contact",
-        href: "/"
+        text: "Contact"
     }
 ]
 
 export const Navbar = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
+    const scrollTo = (el: string, ) => {
+        let element = document.getElementById(el);
+        let headerOffset = 100;
+        let elementPosition = element.getBoundingClientRect().top;
+        let offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+
+    }
 
     return (
         <nav className={styles.nav}>
@@ -28,7 +38,8 @@ export const Navbar = () => {
                         <div 
                             onClick={() => {
                                 setActiveIdx(idx); 
-                            }} 
+                                scrollTo(el.text);
+                            }}
                             key={el.text}
                         >
                             <NavItem active={activeIdx === idx} {...el} />

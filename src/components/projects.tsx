@@ -10,7 +10,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
    return (
     <div>
       <section>
-        <h2>Projects</h2>
+        <h2 id={"Projects"}>Projects</h2>
           {allProjectsData.map(({ id, title, dateFrom, dateTo, location, contentHtml }, index) => (
             <div key={index}>
                 <div className={styles.flex_container}>

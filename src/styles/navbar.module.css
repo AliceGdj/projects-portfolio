@@ -49,13 +49,16 @@
     margin-left: auto;
 }
 
-.nav_menulist div:last-child {
+.nav_menulist .download_resume{
     background-color: grey;
-    color: #fff;
     text-align: center;
     border: 2px solid grey;
     border-radius: 30px;
     padding: 6px 10px;
+}
+
+.nav_menulist .download_resume a {
+    color: white;
 }
 
 .nav_menulist div:last-child:hover {
