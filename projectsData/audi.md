@@ -8,7 +8,6 @@ location: 'Berlin, Germany'
 - Defined processes with Adobe Experience Manager CMS 
 - Fixed bugs in large codebase
 - Improved performance & responsiveness of webpages
-- Code Reviews / Releases / Github / Gitlab / CI-CD / Unit tests
+- Code Reviews / Releases / Github
 - SAFe methodologies
-
-**Stack: ReactJS, Redux, Typescript, DotJS, Handlebars, AEM, Cypress, Serverless, Docker, Jest**
+- **ReactJS, Redux, Typescript, DotJS, Handlebars, AEM, Cypress, Serverless, Docker, Jest**

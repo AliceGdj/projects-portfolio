@@ -9,7 +9,6 @@ location: 'Berlin, Germany'
 - Created new features, functionalities and capabilities to add new product verticals
 - Automated manual processes for data management 
 - Optimised cross-browser and multi-platform compatibility 
-- Coordinated product launch in new markets - UK, US, Poland 
+- Coordinated product launch in new markets: UK, US, Poland 
 - Agile methodology
-
-**Stack: Javascript, ReactJS, NodeJS, SQL, Bootstrap**
+- **ReactJS, NodeJS, SQL, Bootstrap**

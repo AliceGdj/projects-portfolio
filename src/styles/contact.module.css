@@ -1,0 +1,14 @@
+.button{
+    background-color: grey;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 6px 10px;
+    color: white;
+    font-size: 18px;
+    min-height: fit-content;
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.6);
+}

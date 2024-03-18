@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/navbar.module.css';
 import NavItem from './navItem';
-import { getComponentTypeModule } from 'next/dist/server/lib/app-dir-module';
 
 const MENU_LIST = [
     {

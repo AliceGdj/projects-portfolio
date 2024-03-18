@@ -18,7 +18,19 @@ h1 {
 }
 
 h2 {
-  text-decoration: underline;
+  width: fit-content;
+  position: relative;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -16px;
+  left: 0;
+  height: 6px;
+  background-color: black;
+
 }
 
 h3 {
@@ -41,4 +53,13 @@ img {
 
 hr {
   border-top: 3px dashed black;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: none;
 }

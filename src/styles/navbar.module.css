@@ -8,6 +8,7 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .nav_link {
@@ -62,5 +63,5 @@
 }
 
 .nav_menulist div:last-child:hover {
-    background-color: lightgray;
+    background-color: rgba(128, 128, 128, 0.6);
 }
