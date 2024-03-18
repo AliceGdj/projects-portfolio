@@ -63,5 +63,5 @@
 }
 
 .nav_menulist div:last-child:hover {
-    background-color: lightgray;
+    background-color: rgba(128, 128, 128, 0.6);
 }

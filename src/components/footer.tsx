@@ -14,7 +14,7 @@ export default function Contact () {
                     src={"/images/linkedin.png"}
                     height={50}
                     width={50}
-                    alt=""
+                    alt="link to Alice's linkedin profile"
                 />
             </a>
             <a href="https://github.com/AliceGdj" target="_blank">
@@ -23,7 +23,7 @@ export default function Contact () {
                     src={"/images/github.png"}
                     height={50}
                     width={50}
-                    alt=""
+                    alt="link to Alice's github profile"
                 />
             </a>
             <a href="https://www.xing.com/profile/Alice_Grandjean/web_profiles" target="_blank">
@@ -32,7 +32,7 @@ export default function Contact () {
                     src={"/images/xing.png"}
                     height={50}
                     width={50}
-                    alt=""
+                    alt="link to Alice's xing profile"
                 />
             </a>
         </section>

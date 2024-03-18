@@ -54,3 +54,12 @@ img {
 hr {
   border-top: 3px dashed black;
 }
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: none;
+}

@@ -9,9 +9,9 @@ interface Props {
 
 const NavItem = ({ text, active }: Props) => {
     return (
-        <div className={`${styles.nav_link} ${active && styles.active}`}>
+        <button className={`${styles.nav_link} ${active && styles.active}`}>
             {text}
-        </div> 
+        </button> 
     )
 }
 
