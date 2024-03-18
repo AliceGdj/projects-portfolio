@@ -22,8 +22,8 @@ export default function Profile () {
         I worked for various clients from startups to big companies and I developed (or created from scratch) various products for the car, finance or health industries.
         My stack is primarily <strong>Javascript, Typescript, React</strong> and I include in my skills <strong>Node, Python, AWS, Docker, REST and GraphQL</strong>.</p>
         <br />
-        <p>Since 2022 I am available for <strong>freelance work</strong> and I provide my expertise for Web Applications, Single Page Applications, and Progressive Web Applications (PWAs).
-          In my everyday work, I care deeply about users' needs, performance optimization, accessibility and communication with the team.</p>
+        <p>Since 2022 I am available for <strong>freelance work</strong> and I provide my expertise for Web Applications, Single Page Applications and Progressive Web Applications (PWAs).
+          In my everyday work, I care deeply about users&apos; needs, performance optimization, accessibility and communication with the team.</p>
       </section>
       <br />
     </div>
