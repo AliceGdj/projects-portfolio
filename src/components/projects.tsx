@@ -5,7 +5,6 @@ import Image from 'next/image';
 import styles from '../styles/projects.module.css';
 // import ArrowNotchDown from '../../public/images/ArrowNotchDown.svg';
 
-
 export default function Projects ({ allProjectsData }: { allProjectsData: ProjectDataContent[]}) {
    return (
     <div>
@@ -17,8 +16,8 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                     <Image
                         priority
                         src={"/images/"+id+".jpeg"}
-                        height={108}
-                        width={108}
+                        height={90}
+                        width={90}
                         alt=""
                     />
                     <div className={styles.flex_column_container}>
@@ -40,13 +39,7 @@ export default function Projects ({ allProjectsData }: { allProjectsData: Projec
                     /> */}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                {index < allProjectsData.length-1 && (
-                  <>
-                    <br />
-                    <hr />
-                    <br />
-                  </>
-                )}
+                <br />
             </div>
           ))}
       </section>
