@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Contact () {
   return (
-        <section className={styles.footer}>
+        <footer className={styles.footer}>
             <p>
                 Copyright © 2024 - Alice Grandjean
             </p>
@@ -35,6 +35,6 @@ export default function Contact () {
                     alt="link to Alice's xing profile"
                 />
             </a>
-        </section>
+        </footer>
   );
 }
