@@ -10,7 +10,7 @@ export default function Contact () {
                 Copyright © 2024 - Alice Grandjean
             </p>
             <div>
-                <Link href="https://www.linkedin.com/in/alice-grandjean-0b536b90/" target="_blank">
+                <Link href="https://www.linkedin.com/in/alice-grandjean-0b536b90/" target="_blank" title="Alice's LinkedIn profile">
                     <Image
                         priority
                         src={"/images/linkedin.png"}
@@ -19,7 +19,7 @@ export default function Contact () {
                         alt="link to Alice's linkedin profile"
                     />
                 </Link>
-                <Link href="https://github.com/AliceGdj" target="_blank">
+                <Link href="https://github.com/AliceGdj" target="_blank" title="Alice's Github profile">
                     <Image
                         priority
                         src={"/images/github.png"}
@@ -28,7 +28,7 @@ export default function Contact () {
                         alt="link to Alice's github profile"
                     />
                 </Link>
-                <Link href="https://www.xing.com/profile/Alice_Grandjean/web_profiles" target="_blank">
+                <Link href="https://www.xing.com/profile/Alice_Grandjean/web_profiles" target="_blank" title="Alice's Xing profile">
                     <Image
                         priority
                         src={"/images/xing.png"}
