@@ -118,6 +118,7 @@
 
 .footer div {
   min-width: 180px;
+  display: flex;
 }
 
 .footer a {
@@ -126,4 +127,23 @@
   @media (max-width:700px)  {
     margin-left: 0.5rem;
   }
+}
+
+.footer a[title] {
+  position: relative;
+}
+
+.footer a[title]:hover:after {
+  content: attr(title);
+  display: inline-block;
+  padding: 0.2em 0.6em; 
+  white-space: nowrap; 
+  background-color: #555;
+  color: #fff;
+  font-size: 0.8em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -7em);
+  z-index: 1;
 }

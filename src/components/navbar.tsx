@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/navbar.module.css';
 import NavItem from './navItem';
+import Link from 'next/link';
 
 const MENU_LIST = [
     {
@@ -46,7 +47,7 @@ export const Navbar = () => {
                     )  
                 })}
                 <div className={styles.download_resume}>
-                    <a href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf">Download Resume</a>
+                    <Link href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf">Download Resume</Link>
                 </div>
             </div>
         </nav>

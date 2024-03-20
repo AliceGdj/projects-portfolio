@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/contact.module.css';
+import Link from 'next/link';
 
 export default function Contact () {
   return (
@@ -8,7 +9,7 @@ export default function Contact () {
       <p>Do you want us to work together?</p> 
       <p>Feel free to contact me at : <strong><u>alice.grandj.49@gmail.com</u></strong></p>
       <br />
-      <a href="mailto:alice.grandj.49@gmail.com" className={styles.button}>Send me an email !</a>
+      <Link href="mailto:alice.grandj.49@gmail.com" className={styles.linkEmail}>Send me an email !</Link>
       <br />
       <br />
       <br />

@@ -21,6 +21,7 @@ h1 {
 h2 {
   width: fit-content;
   position: relative;
+  /* color: #CC3399; */ /* comment for later to change the color code of the page and refactor */ 
 }
 
 h2::before {
@@ -31,7 +32,7 @@ h2::before {
   left: 0;
   height: 6px;
   background-color: black;
-
+  /* background-color: #CC3399; */
 }
 
 h3 {
@@ -58,6 +59,7 @@ hr {
 
 button {
   border: none;
+  font-size: 18px;
 }
 
 button:hover {
