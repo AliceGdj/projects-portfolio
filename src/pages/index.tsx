@@ -34,8 +34,8 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
           <div className={styles.headerDescription}>
             <h1>Welcome to my Portfolio !</h1>
             <p>I am Alice Grandjean,</p>
-            <p>React enthousiast,</p>
-            <p>I will make your website&hellip;</p>
+            <p>Javascript enthusiast,</p>
+            <p>I will make your web app&hellip;</p>
             <p className={styles.rotatingContainer}>
               <span className={styles.rotatingText}> ✨ beautiful ✨</span>
               <span className={styles.rotatingText}> 🛠️ maintainable 🛠️</span>
