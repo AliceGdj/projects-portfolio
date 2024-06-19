@@ -11,4 +11,4 @@ location: 'Berlin, Germany'
 - Supported the development of the Admin dashboard
 - Code Reviews / Releases / Azure / Unit tests
 - Agile methodology
-- **ReactJS, Typescript, Tailwind CSS, GraphQL, Apollo, Jest, Azure AD**
+- **NextJS, ReactJS, Typescript, Tailwind CSS, GraphQL, Apollo, Jest, Azure AD**
