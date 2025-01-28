@@ -8,12 +8,15 @@ const MENU_LIST = [
         text: "Profile"
     },
     {
+        text: "Tech"
+    },
+    {
         text: "Projects"
     },
     {
         text: "Contact"
     }
-]
+];
 
 export const Navbar = () => {
     const [activeIdx, setActiveIdx] = useState(-1);
@@ -27,8 +30,7 @@ export const Navbar = () => {
              top: offsetPosition,
              behavior: "smooth"
         });
-
-    }
+    };
 
     return (
         <nav className={styles.nav}>

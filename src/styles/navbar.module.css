@@ -3,6 +3,7 @@
     padding: 1rem 5rem;
     justify-content: space-between;
     align-items: center;
+    color: #21115e;
     background-color: #f1f1f1;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -43,8 +44,7 @@
     left: 0;
     height: 6px;
     transition: all 0.2s;
-    background-color: black;
-    /* background-color: #CC3399; */
+    background-color: #21115e;
 }
 
 .nav_link:hover::before, 
@@ -58,10 +58,10 @@
 }
 
 .nav_menulist .download_resume{
-    background-color: rgb(112,112,112);
+    background-color: rgb(33,17,94);
     text-align: center;
-    border-radius: 30px;
-    padding: 6px 10px;
+    border-radius: 6px;
+    padding: 6px 15px;
 }
 
 .nav_menulist .download_resume a {
@@ -69,5 +69,5 @@
 }
 
 .nav_menulist div:last-child:hover {
-    background-color: rgba(112, 112, 112, 0.7);
+    background-color: rgba(33,17,94, 0.7);
 }

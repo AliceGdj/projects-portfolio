@@ -1,8 +1,24 @@
+.boldStyle {
+  padding: 4px;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #d7deea;
+  font-weight: bold;
+}
+
 .pageContainer {
   @media (max-width:600px)  {
     width: fit-content;
   }
 }
+
+.titleSectionBackground {
+  background: #f1f1f1;
+  width: 100%;
+  height: 90vh;
+  padding-top: 80px;
+}
+
 
 .container {
   margin: 0 5rem;
@@ -22,24 +38,73 @@
   }
 }
 
+.headerContainerClients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imageContainerClients {
+  flex-grow: 1;
+}
+
+.headerContainerTech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tech {
+  padding: 4px;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #d7deea;
+}
+
+.techExpert {
+  padding: 4px;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #81eea9;
+}
+
 .headerImage {
-  border-radius: 20px;
-  min-width: 8rem;
-  max-width: 400px;
-  height: 100%;  
+  border-radius: 100px;
+  /* margin: 0 5rem; */
+  justify-self: center;
+  top: -50px
+}
+
+.imageBanner {
+  /* align-items: center; */
+  /* align-self: center; */
+  /* align-self: content; */
+  /* justify-content: center;  */
+  justify-self: center; 
+
 }
 
 .headerDescription {
+  margin: 0 5rem;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
-  margin: 4rem 2rem;
   flex-grow: 1;
   @media (max-width:600px)  {
     margin: 0rem 2rem 2rem 2rem;
   }
 }
 
+.title {
+  font-size: 60px;
+  align-self: center;
+  justify-content: center; 
+
+}
+
 .rotatingContainer {
+  font-size: 25px;
   position: relative;
   display: flex;
   flex-direction: row;

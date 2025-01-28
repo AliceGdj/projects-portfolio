@@ -9,7 +9,7 @@ export default function Contact () {
       <p>Do you want us to work together?</p> 
       <p>Feel free to contact me at : <strong><u>alice.grandj.49@gmail.com</u></strong></p>
       <br />
-      <Link href="mailto:alice.grandj.49@gmail.com" className={styles.linkEmail}>Send me an email !</Link>
+      <Link href="mailto:alice.grandj.49@gmail.com" className={styles.linkEmail}>Send me an email</Link>
       <br />
       <br />
       <br />

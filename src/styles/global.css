@@ -5,8 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 16px;
   background-color: white;
+  color: #21115e;
 }
 
 * {
@@ -21,7 +22,7 @@ h1 {
 h2 {
   width: fit-content;
   position: relative;
-  /* color: #CC3399; */ /* comment for later to change the color code of the page and refactor */ 
+  color: #21115e;
 }
 
 h2::before {
@@ -31,16 +32,22 @@ h2::before {
   bottom: -16px;
   left: 0;
   height: 6px;
-  background-color: black;
-  /* background-color: #CC3399; */
+  background-color: #21115e;
 }
 
 h3 {
   margin: 0;
+  padding: 4px;
+  border-radius: 6px;
+  margin: 2px;
+  background-color: #d7deea;
+  box-sizing: border-box;
+  width: fit-content;
+
 }
 
 a {
-  color: black;
+  color: #21115e;
   text-decoration: none;
 }
 
@@ -59,7 +66,8 @@ hr {
 
 button {
   border: none;
-  font-size: 18px;
+  color: #21115e;
+  font-size: 16px;
 }
 
 button:hover {

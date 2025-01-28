@@ -8,6 +8,10 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 import styles from '../styles/utils.module.css';
 import Image from 'next/image';
+import PreviousClientsBanner from '../components/previousClientsBanner';
+import Technology from '../components/technology';
+import ArrowNotchDown from '../../public/images/ArrowNotchDown.svg';
+
 
 export function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
@@ -22,29 +26,38 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
   return (
     <div className={styles.pageContainer}>
         <Navbar />
-        <header className={styles.headerContainer}>
+        <header className={styles.titleSectionBackground}>
           <Image
               priority
               src="/images/profile.jpeg"
               className={styles.headerImage}
-              height={400}
-              width={400}
+              height={200}
+              width={200}
               alt=""
           />
           <div className={styles.headerDescription}>
-            <h1>Welcome to my Portfolio !</h1>
-            <p>I am Alice Grandjean,</p>
+            <p className={styles.title}>Alice Grandjean</p>
             <p>Javascript enthusiast,</p>
-            <p>I will make your web app&hellip;</p>
+            <p>I will make your Web App&hellip;</p>
             <p className={styles.rotatingContainer}>
               <span className={styles.rotatingText}> ✨ beautiful ✨</span>
               <span className={styles.rotatingText}> 🛠️ maintainable 🛠️</span>
               <span className={styles.rotatingText}> ✅ seamless and accessible for all ✅</span>
             </p>
           </div>
+            {/* <Image
+                priority
+                src={ArrowNotchDown}
+                className={styles.collapsible_icon}
+                height={50}
+                width={50}
+                alt=""
+            /> */}
         </header>
         <div className={styles.container}>
           <Profile />
+          <PreviousClientsBanner allProjectsData={allProjectsData} />
+          <Technology />
           <Projects allProjectsData={allProjectsData}/>
           <Contact />
         </div>

@@ -5,9 +5,7 @@ dateTo: '2021-10-31'
 location: 'Berlin, Germany'
 ---
 
+- Developed the Vehicle Transport Platform Web App
 - Defined processes with Adobe Experience Manager CMS 
 - Fixed bugs in large codebase
 - Improved performance & responsiveness of webpages
-- Code Reviews / Releases / Github
-- SAFe methodologies
-- **ReactJS, Redux, Typescript, DotJS, Handlebars, AEM, Cypress, Serverless, Docker, Jest**
