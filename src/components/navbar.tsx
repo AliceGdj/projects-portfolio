@@ -48,9 +48,7 @@ export const Navbar = () => {
                         </div>    
                     )  
                 })}
-                <div className={styles.download_resume}>
-                    <Link href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf">Download Resume</Link>
-                </div>
+                <Link href="https://github.com/AliceGdj/resume/raw/main/Resume_Alice_Grandjean.pdf">Download Resume</Link>
             </div>
         </nav>
     )
