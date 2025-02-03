@@ -39,15 +39,15 @@ export default function Home ({ allProjectsData }: { allProjectsData: ProjectDat
           <div className={styles.headerDescription}>
             <p>Fullstack developer & Javascript focused</p>
             <p>I can help with Web Apps, PWAs or Greenfield Projects</p>
-            <Image
-                priority
-                src={ArrowNotchDown}
-                className={styles.headerIcon}
-                height={50}
-                width={50}
-                alt=""
-            />
           </div>
+          <Image
+              priority
+              src={ArrowNotchDown}
+              className={styles.headerIcon}
+              height={50}
+              width={50}
+              alt=""
+          />
         </header>
         <div className={styles.container}>
           <Profile />

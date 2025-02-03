@@ -8,6 +8,9 @@ body {
   font-size: 16px;
   background-color: white;
   color: #21115e;
+  @media (max-width:600px)  {
+    width: fit-content;
+  }
 }
 
 * {
