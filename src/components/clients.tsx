@@ -9,7 +9,7 @@ export default function Clients ({ allProjectsData }: { allProjectsData: Project
         <p>Previous clients:</p>
         <div className={styles.containerFlexRow}>
             {allProjectsData.map(({ id }, index) => id !== 'freelance' && (
-                <div key={index} className={styles.containerGrow}>                    
+                <div key={index} className={`${styles.containerGrow} ${styles.break}`}>                    
                     <Image
                         priority
                         src={"/images/"+id+".jpeg"}
