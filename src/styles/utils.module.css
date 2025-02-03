@@ -72,3 +72,10 @@
   margin: 2px;
   background-color: #81eea9;
 }
+
+.break:nth-last-child(2) {
+  @media (max-width:700px)  {
+    flex-basis: 50%;
+    flex-grow: 0;
+  }
+}
