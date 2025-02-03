@@ -14,47 +14,53 @@ export default function Technology () {
   return (
     <section>
         <h2 id={"Tech"}>Tech</h2>
+        <br />
         <p>Frontend technology:</p>
-        <div className={styles.headerContainerTech}>
+        <div className={styles.containerFlexRow}>
           {TECH_FRONTEND_EXPERT.map((item) => (
-            <div key={item} className={styles.techExpert}>
+            <div key={item} className={styles.greenChip}>
                 {item}
             </div>
           ))}
           {TECH_FRONTEND.map((item) => (
-            <div key={item} className={styles.tech}>
+            <div key={item} className={styles.grayChip}>
                 {item}
             </div>
           ))}
         </div>
 
+        <br />
+
         <p>Backend technology:</p>
-        <div className={styles.headerContainerTech}>
+        <div className={styles.containerFlexRow}>
           {TECH_BACKEND_EXPERT.map((item) => (
-            <div key={item} className={styles.techExpert}>
+            <div key={item} className={styles.greenChip}>
               {item}
             </div>
           ))}
           {TECH_BACKEND.map((item) => (
-            <div key={item} className={styles.tech}>
+            <div key={item} className={styles.grayChip}>
               {item}
             </div>
           ))}
         </div>
 
+        <br />
+
         <p>Misc. technology:</p>
-        <div className={styles.headerContainerTech}>
+        <div className={styles.containerFlexRow}>
           {MISC_EXPERT.map((item) => (
-            <div key={item} className={styles.techExpert}>
+            <div key={item} className={styles.greenChip}>
               {item}
             </div>
           ))}
           {MISC.map((item) => (
-            <div key={item} className={styles.tech}>
+            <div key={item} className={styles.grayChip}>
               {item}
             </div>
           ))}
         </div>
+        <br />
     </section>
   );
 }

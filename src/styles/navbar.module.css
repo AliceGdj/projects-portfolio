@@ -3,14 +3,13 @@
     padding: 1rem 5rem;
     justify-content: space-between;
     align-items: center;
-    color: #21115e;
     background-color: #f1f1f1;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     z-index: 10;
     @media (max-width:600px)  {
-        padding: 0.5rem;
+        padding: 1rem 0.5rem;
     }
 }
 
@@ -27,13 +26,8 @@
     width: fit-content;
     flex-direction: row;
     align-items: center;
-    column-gap: 24px;
+    column-gap: 30px;
     flex-grow: 1;
-}
-
-.nav_menulist button {
-    padding: 0;
-    margin-right: 1rem;
 }
 
 .nav_link::before {
@@ -53,21 +47,6 @@
     content: attr('data-text');
 }
 
-.nav_menulist div:last-child {
+.nav_menulist a {
     margin-left: auto;
-}
-
-.nav_menulist .download_resume{
-    background-color: rgb(33,17,94);
-    text-align: center;
-    border-radius: 6px;
-    padding: 6px 15px;
-}
-
-.nav_menulist .download_resume a {
-    color: white;
-}
-
-.nav_menulist div:last-child:hover {
-    background-color: rgba(33,17,94, 0.7);
 }
